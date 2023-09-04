@@ -13,7 +13,7 @@ namespace EngineSound
         public void Init(object gameinstance = null)
         {
             var harmony = new Harmony("EngineSound");
-            harmony.PatchAll();
+            harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
 
         public void Update()
